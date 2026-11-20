@@ -3,6 +3,78 @@ import React, { useState, useEffect, useRef } from 'react';
 // Project List Data
 const projectsData = [
   {
+    title: 'Voxel Eye',
+    category: 'Static',
+    image: '/assets/img/projects/static/voxel-eye.webp',
+    tech: ['HTML', 'CSS', 'JS'],
+    link: 'https://voxeleye.com/',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+  },
+  {
+    title: 'Sorna Mahal',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/sorna-mahal.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.sornamahal.com/',
+    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+  },
+  {
+    title: 'Puthiya Bharatham',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/puthiya-bharatham.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.pudhiyabharatham.com/',
+    gradient: 'linear-gradient(135deg, #ff9933 0%, #138808 100%)'
+  },
+  {
+    title: 'Dumzar Biryani',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/dumzar.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://dumzar.com/',
+    gradient: 'linear-gradient(135deg, #e65c00 0%, #F9D423 100%)'
+  },
+  {
+    title: 'Cross Group',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/cross-group.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.crossgroup.in/',
+    gradient: 'linear-gradient(135deg, #2b5876 0%, #4e4376 100%)'
+  },
+  {
+    title: 'Aetrix Ventures',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/aetrix-ventures.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.aetrixventures.com/',
+    gradient: 'linear-gradient(135deg, #0ba360 0%, #3cba92 100%)'
+  },
+  {
+    title: 'Espure',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/espure.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.espure.in/',
+    gradient: 'linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)'
+  },
+  {
+    title: 'J3 Apexion',
+    category: 'Static',
+    image: '/assets/img/projects/static/j3-apexion.webp',
+    tech: ['HTML', 'CSS', 'JS'],
+    link: 'https://www.j3apexion.com/',
+    gradient: 'linear-gradient(135deg, #141e30 0%, #243b55 100%)'
+  },
+  {
+    title: 'Tribangun UP',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/tribangun-up.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.tribangun-up.com/',
+    gradient: 'linear-gradient(135deg, #ff512f 0%, #dd2476 100%)'
+  },
+  {
     title: 'Cooper Elevators',
     category: 'Dynamic',
     image: '/assets/img/projects/dynamic/cooper.webp',
@@ -153,78 +225,6 @@ const projectsData = [
     tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
     link: 'https://trisulaindia.com/',
     gradient: 'linear-gradient(135deg, #f12711 0%, #f5af19 100%)'
-  },
-  {
-    title: 'Voxel Eye',
-    category: 'Static',
-    image: '/assets/img/projects/static/voxel-eye.webp',
-    tech: ['HTML', 'CSS', 'JS'],
-    link: 'https://voxeleye.com/',
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
-  },
-  {
-    title: 'Sorna Mahal',
-    category: 'Dynamic',
-    image: '/assets/img/projects/dynamic/sorna-mahal.webp',
-    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-    link: 'https://www.sornamahal.com/',
-    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
-  },
-  {
-    title: 'Puthiya Bharatham',
-    category: 'Dynamic',
-    image: '/assets/img/projects/dynamic/puthiya-bharatham.webp',
-    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-    link: 'https://www.pudhiyabharatham.com/',
-    gradient: 'linear-gradient(135deg, #ff9933 0%, #138808 100%)'
-  },
-  {
-    title: 'Dumzar Biryani',
-    category: 'Dynamic',
-    image: '/assets/img/projects/dynamic/dumzar.webp',
-    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-    link: 'https://dumzar.com/',
-    gradient: 'linear-gradient(135deg, #e65c00 0%, #F9D423 100%)'
-  },
-  {
-    title: 'Cross Group',
-    category: 'Dynamic',
-    image: '/assets/img/projects/dynamic/cross-group.webp',
-    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-    link: 'https://www.crossgroup.in/',
-    gradient: 'linear-gradient(135deg, #2b5876 0%, #4e4376 100%)'
-  },
-  {
-    title: 'Aetrix Ventures',
-    category: 'Dynamic',
-    image: '/assets/img/projects/dynamic/aetrix-ventures.webp',
-    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-    link: 'https://www.aetrixventures.com/',
-    gradient: 'linear-gradient(135deg, #0ba360 0%, #3cba92 100%)'
-  },
-  {
-    title: 'Espure',
-    category: 'Dynamic',
-    image: '/assets/img/projects/dynamic/espure.webp',
-    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-    link: 'https://www.espure.in/',
-    gradient: 'linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)'
-  },
-  {
-    title: 'J3 Apexion',
-    category: 'Static',
-    image: '/assets/img/projects/static/j3-apexion.webp',
-    tech: ['HTML', 'CSS', 'JS'],
-    link: 'https://www.j3apexion.com/',
-    gradient: 'linear-gradient(135deg, #141e30 0%, #243b55 100%)'
-  },
-  {
-    title: 'Tribangun UP',
-    category: 'Dynamic',
-    image: '/assets/img/projects/dynamic/tribangun-up.webp',
-    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-    link: 'https://www.tribangun-up.com/',
-    gradient: 'linear-gradient(135deg, #ff512f 0%, #dd2476 100%)'
   }
 ];
 
@@ -501,9 +501,12 @@ function HeroCreativeWorkspace() {
       {/* Cinematic Architectural Workspace Image */}
       <div className="vector-art-wrapper">
         <img
-          src="/assets/img/cinematic_workspace.png"
+          src="/assets/img/cinematic_workspace.webp"
           alt="Cinematic Modern Workspace"
           className="vector-art-img"
+          width="1024"
+          height="1024"
+          fetchPriority="high"
         />
         <div className="vector-art-overlay"></div>
       </div>
