@@ -153,6 +153,78 @@ const projectsData = [
     tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
     link: 'https://trisulaindia.com/',
     gradient: 'linear-gradient(135deg, #f12711 0%, #f5af19 100%)'
+  },
+  {
+    title: 'Voxel Eye',
+    category: 'Static',
+    image: '/assets/img/projects/static/voxel-eye.webp',
+    tech: ['HTML', 'CSS', 'JS'],
+    link: 'https://voxeleye.com/',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+  },
+  {
+    title: 'Sorna Mahal',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/sorna-mahal.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.sornamahal.com/',
+    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+  },
+  {
+    title: 'Puthiya Bharatham',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/puthiya-bharatham.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.pudhiyabharatham.com/',
+    gradient: 'linear-gradient(135deg, #ff9933 0%, #138808 100%)'
+  },
+  {
+    title: 'Dumzar Biryani',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/dumzar.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://dumzar.com/',
+    gradient: 'linear-gradient(135deg, #e65c00 0%, #F9D423 100%)'
+  },
+  {
+    title: 'Cross Group',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/cross-group.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.crossgroup.in/',
+    gradient: 'linear-gradient(135deg, #2b5876 0%, #4e4376 100%)'
+  },
+  {
+    title: 'Aetrix Ventures',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/aetrix-ventures.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.aetrixventures.com/',
+    gradient: 'linear-gradient(135deg, #0ba360 0%, #3cba92 100%)'
+  },
+  {
+    title: 'Espure',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/espure.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.espure.in/',
+    gradient: 'linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)'
+  },
+  {
+    title: 'J3 Apexion',
+    category: 'Static',
+    image: '/assets/img/projects/static/j3-apexion.webp',
+    tech: ['HTML', 'CSS', 'JS'],
+    link: 'https://www.j3apexion.com/',
+    gradient: 'linear-gradient(135deg, #141e30 0%, #243b55 100%)'
+  },
+  {
+    title: 'Tribangun UP',
+    category: 'Dynamic',
+    image: '/assets/img/projects/dynamic/tribangun-up.webp',
+    tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    link: 'https://www.tribangun-up.com/',
+    gradient: 'linear-gradient(135deg, #ff512f 0%, #dd2476 100%)'
   }
 ];
 
@@ -293,7 +365,7 @@ function ProjectMarquee({ projectsList }) {
     const updateAutoScroll = () => {
       if (containerRef.current && !isDownRef.current && !isHoveredRef.current) {
         containerRef.current.scrollLeft += speed;
-        
+
         const halfWidth = containerRef.current.scrollWidth / 2;
         if (containerRef.current.scrollLeft >= halfWidth) {
           containerRef.current.scrollLeft -= halfWidth;
@@ -425,20 +497,20 @@ function HeroCreativeWorkspace() {
     <div className="hero-creative-workspace reveal slide-right">
       {/* Background decorative elements matching the architecture aesthetic */}
       <div className="workspace-glow-backdrop"></div>
-      
+
       {/* Cinematic Architectural Workspace Image */}
       <div className="vector-art-wrapper">
-        <img 
-          src="/assets/img/cinematic_workspace.png" 
-          alt="Cinematic Modern Workspace" 
-          className="vector-art-img" 
+        <img
+          src="/assets/img/cinematic_workspace.png"
+          alt="Cinematic Modern Workspace"
+          className="vector-art-img"
         />
         <div className="vector-art-overlay"></div>
       </div>
 
       {/* Parallax Scroll Text Overlay - Centered Typewriter */}
       <div className="hero-scroll-text-container">
-        <div 
+        <div
           className="hero-scroll-text-row typewriter-row"
           style={{ transform: `translate3d(${-scrollOffset * 0.4}px, 0, 0)` }}
         >
@@ -505,14 +577,14 @@ export function HeroSection() {
             <h1 className="hero-title" ref={heroTitleRef}>Logesh</h1>
           </div>
           <h2 className="hero-subtitle">Front End Developer</h2>
-          
+
           <div className="hero-social-row">
             <a href="https://www.linkedin.com/in/lokezsh/" target="_blank" rel="noopener noreferrer" className="hero-social-link-item">
               <i className="ri-linkedin-box-fill"></i>
               <span>Connect on LinkedIn</span>
             </a>
           </div>
-          
+
           <p className="hero-desc-highlight">
             A Front End Developer based in the digital space for over 1+ years. I am proud of my works and ready to face the next challenge.
           </p>
@@ -645,7 +717,7 @@ export function SkillsSection() {
     { type: 'command', text: 'cat welcome.txt' },
     { type: 'response', text: 'Welcome to my interactive skills board! Click a button below or type a command to explore my technology stack.' }
   ]);
-  
+
   const terminalBodyRef = useRef(null);
 
   useEffect(() => {
@@ -827,11 +899,11 @@ export function SkillsSection() {
               <div className="tool-item">
                 <div className="tool-icon figma">
                   <svg viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="36">
-                    <path d="M19 0H9.5C4.253 0 0 4.253 0 9.5C0 14.747 4.253 19 9.5 19H19V0Z" fill="#F24E1E"/>
-                    <path d="M38 9.5C38 4.253 33.747 0 28.5 0H19V19H28.5C33.747 19 38 14.747 38 9.5Z" fill="#FF7262"/>
-                    <path d="M19 19H9.5C4.253 19 0 23.253 0 28.5C0 33.747 4.253 38 9.5 38H19V19Z" fill="#A259FF"/>
-                    <path d="M19 38H28.5C33.747 38 38 33.747 38 28.5C38 23.253 33.747 19 28.5 19H19V38Z" fill="#1ABCFE"/>
-                    <path d="M9.5 57C14.747 57 19 52.747 19 47.5V38H9.5C4.253 38 0 42.253 0 47.5C0 52.747 4.253 57 9.5 57Z" fill="#0ACF83"/>
+                    <path d="M19 0H9.5C4.253 0 0 4.253 0 9.5C0 14.747 4.253 19 9.5 19H19V0Z" fill="#F24E1E" />
+                    <path d="M38 9.5C38 4.253 33.747 0 28.5 0H19V19H28.5C33.747 19 38 14.747 38 9.5Z" fill="#FF7262" />
+                    <path d="M19 19H9.5C4.253 19 0 23.253 0 28.5C0 33.747 4.253 38 9.5 38H19V19Z" fill="#A259FF" />
+                    <path d="M19 38H28.5C33.747 38 38 33.747 38 28.5C38 23.253 33.747 19 28.5 19H19V38Z" fill="#1ABCFE" />
+                    <path d="M9.5 57C14.747 57 19 52.747 19 47.5V38H9.5C4.253 38 0 42.253 0 47.5C0 52.747 4.253 57 9.5 57Z" fill="#0ACF83" />
                   </svg>
                 </div>
                 <div className="tool-info">

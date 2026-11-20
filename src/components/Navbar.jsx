@@ -52,12 +52,11 @@ export default function Navbar() {
               <li><a href="#about" className="nav-link">About</a></li>
               <li><a href="#skills" className="nav-link">Skills</a></li>
               <li><a href="#projects" className="nav-link">Projects</a></li>
-              <li><a href="#contact" className="nav-link">Contact</a></li>
             </ul>
           </div>
 
           <div className="nav-actions">
-            <a href="#contact" className="nav-cta-btn" id="navCta">
+            <a href="mailto:logez2003@gmail.com" className="nav-cta-btn" id="navCta">
               <span>Let's Talk</span>
               <i className="ri-arrow-right-up-line"></i>
             </a>
@@ -82,13 +81,12 @@ export default function Navbar() {
             <li><a href="#about" className="menu-link-item" onClick={() => setIsMenuOpen(false)}>About</a></li>
             <li><a href="#skills" className="menu-link-item" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
             <li><a href="#projects" className="menu-link-item" onClick={() => setIsMenuOpen(false)}>Projects</a></li>
-            <li><a href="#contact" className="menu-link-item" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
           </ul>
           <div className="menu-overlay-footer">
             <p className="menu-footer-label">Connect & Write</p>
             <div className="menu-socials">
               <a href="https://www.linkedin.com/in/lokezsh/" target="_blank" rel="noopener noreferrer" className="menu-social-link" aria-label="LinkedIn"><i className="ri-linkedin-fill"></i></a>
-              <a href="mailto:logeshfreelance@gmail.com" className="menu-social-link" aria-label="Email"><i className="ri-mail-fill"></i></a>
+              <a href="mailto:logez2003@gmail.com" className="menu-social-link" aria-label="Email"><i className="ri-mail-fill"></i></a>
             </div>
           </div>
         </div>

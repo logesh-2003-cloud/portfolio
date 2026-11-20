@@ -79,9 +79,9 @@ export default function About() {
             </div>
           </div>
           
-          <a href="#contact" className="email-contact-card">
+          <a href="mailto:logez2003@gmail.com" className="email-contact-card">
             <span className="card-subtitle">Get In Touch</span>
-            <span className="card-title">logeshfreelance@gmail.com</span>
+            <span className="card-title">logez2003@gmail.com</span>
             <span className="card-arrow-circle">
               <i className="ri-arrow-right-up-line"></i>
             </span>

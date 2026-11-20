@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import { HeroSection, ProjectsSection, SkillsSection } from './pages/userpage/Home';
 import About from './pages/userpage/About';
-import Contact from './pages/userpage/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -58,7 +57,6 @@ export default function App() {
         <About />
         <SkillsSection />
         <ProjectsSection />
-        <Contact />
       </main>
       <Footer />
     </>
